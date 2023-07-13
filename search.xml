@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>华东师范大学数据科学与工程学院夏令营实践项目总结反思</title>
+      <link href="/2023/07/13/summarize/"/>
+      <url>/2023/07/13/summarize/</url>
+      
+        <content type="html"><![CDATA[<h1 id="华东师范大学数据科学与工程学院夏令营实践项目总结反思"><a href="#华东师范大学数据科学与工程学院夏令营实践项目总结反思" class="headerlink" title="华东师范大学数据科学与工程学院夏令营实践项目总结反思"></a>华东师范大学数据科学与工程学院夏令营实践项目总结反思</h1><h2 id="项目内容"><a href="#项目内容" class="headerlink" title="项目内容"></a>项目内容</h2><p>部署一个不需要后端服务器和数据库支持的网站，只需要使用 HTML、CSS 和 JavaScript 等前端技术就可以实现的静态博客网站。静态网页博客有很多优点，比如速度快、安全稳定、易于维护等。</p><h2 id="项目框架Hexo"><a href="#项目框架Hexo" class="headerlink" title="项目框架Hexo"></a>项目框架Hexo</h2><h3 id="为什么选用Hexo？"><a href="#为什么选用Hexo？" class="headerlink" title="为什么选用Hexo？"></a>为什么选用Hexo？</h3><p>Hexo是一个<strong>快速、简洁且高效</strong>的静态网站生成引擎，它使用 Node.js 编写，并且提供了<strong>丰富的插件和主题</strong>来扩展和定制博客功能和外观。<strong>本地</strong>可以使用 Hexo 来编写和预览博客内容，通过简单的命令就能将生成的网页上传到 GitHub Pages 上。</p><h2 id="博客主题Butterfly"><a href="#博客主题Butterfly" class="headerlink" title="博客主题Butterfly"></a>博客主题Butterfly</h2><h3 id="为什么选择Butterfly？"><a href="#为什么选择Butterfly？" class="headerlink" title="为什么选择Butterfly？"></a>为什么选择Butterfly？</h3><p>1.Butterfly有<strong>精美的界面设计</strong>和<strong>感官舒适的布局</strong>，并且提供了多种样式和个性化选项，呈现出独特的风格。</p><p>2.Butterfly采用<strong>响应式设计</strong>，能够自适应不同的屏幕尺寸和设备类型，包括桌面电脑、平板电脑和手机等，非常方便使用各个设备访问博客。</p><p>3.Butterfly提供了<strong>丰富的功能</strong>和<strong>插件</strong>支持，包括标签云、评论系统、社交媒体分享按钮、搜索功能等。</p><p>4.Butterfly有一个活跃的<strong>开源社区</strong>，提供了丰富的文档和支持资源。可以通过社区获得技术支持、解决问题，并与其他博客作者交流经验和分享主题定制技巧。</p><h3 id="博客页面布局以及设计思路"><a href="#博客页面布局以及设计思路" class="headerlink" title="博客页面布局以及设计思路"></a>博客页面布局以及设计思路</h3><p>博客整体使用butterfly主题的设计，访问博客的主页会有一个子标题，是随机生成的诗句。右上角是导航栏，可以访问其他页面。</p><p><img src="/2023/07/13/summarize/img1.png"></p><p>下拉之后的布局是左边是个人信息展示，以及文章的分类，标签还有博客相关信息的展示；右边是展示博客中的文章，选取了封面图左右分布的样式，比较美观。</p><p><img src="/2023/07/13/summarize/img2.png" alt="image-20230712233931637"></p><p><img src="/2023/07/13/summarize/img3.png" alt="image-20230712233959251"></p><p>下面是手机端展示的博客页面，内容与网页版相同，由于主题的响应式布局，手机端适应的也比较美观。</p><p><img src="/2023/07/13/summarize/img4.png" alt="image-20230712234632055"></p><h2 id="博客功能实现"><a href="#博客功能实现" class="headerlink" title="博客功能实现"></a>博客功能实现</h2><ul><li><p><strong>文章归档</strong>：展示了文章的概貌以及按照发布时间顺序排列，清晰已观看。</p></li><li><p><strong>文章标签</strong>：展示了所有文章的标签，并且根据标签被使用的次数动态调整标签展示的大小。</p></li><li><p><strong>文章分类</strong>：将文章按照分类进行整理，有利于专题式的管理文章，方便检索。</p></li><li><p><strong>友情链接</strong>：将Hexo网站以及其他可能感兴趣的网站链接进行展示。</p></li><li><p><strong>关于</strong>：展示一些个人信息。</p></li><li><p><strong>搜索</strong>：对文章的内容进行模糊查询。包括文章的标题以及文章的内容。</p><p><img src="/2023/07/13/summarize/img5.png" alt="image-20230713000824644"></p></li></ul><blockquote><p>上述功能均基于butterfly主题框架实现~</p></blockquote><h2 id="遇到的问题以及解决方法"><a href="#遇到的问题以及解决方法" class="headerlink" title="遇到的问题以及解决方法"></a>遇到的问题以及解决方法</h2><h3 id="Hexo框架安装"><a href="#Hexo框架安装" class="headerlink" title="Hexo框架安装"></a>Hexo框架安装</h3><p>在安装Hexo框架时会出现安装过程卡住以及安装失败的问题。以为是nodejs版本以及npm版本的问题，升级之后依然安装失败，查阅资料之后，得出有可能是网络延迟或者电脑安全软件的原因。换了网络以及关掉相应软件后按照成功。</p><h3 id="Hexo初始化"><a href="#Hexo初始化" class="headerlink" title="Hexo初始化"></a>Hexo初始化</h3><p>执行到 <a href="https://so.csdn.net/so/search?q=hexo&spm=1001.2101.3001.7020">hexo</a> init命令，即初始化阶段时，在clone完hexo初始化仓库后，卡在安装依赖的界面，如下所示：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br><span class="line">INFO Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">INFO Install dependencies</span><br></pre></td></tr></table></figure><p>解决方法：退出当前命令，在当前文件夹手动执行npm install安装依赖。</p><h3 id="图片显示问题"><a href="#图片显示问题" class="headerlink" title="图片显示问题"></a>图片显示问题</h3><p>在写博客时需要插入图片，可以选用插入外链接的方法，也可以使用本地存储图片的方式。</p><p>我使用的是将图片保存在本地img文件夹，然后在markdown文档中引用的方法，但是一直无法正确显示。</p><p>查找资料找到了以下的解决方案：</p><ul><li><p><strong>设置站点配置_config.yml</strong>：</p><p>post_asset_folder: true</p><p>表示在生成的文章目录中创建一个与文章同名的文件夹，并将文章相关的资源文件（如图像、视频等）放置在该文件夹中。</p></li><li><p><strong>安装插件</strong>：</p><p>npm install hexo-asset-image – save</p></li><li><p><strong>引用图片</strong>：</p><p>运行hexo new “xxxx”来生成markdown博文时，&#x2F;source&#x2F;_posts文件夹内除了xxxx.md文件还有一个同名的文件夹。</p><p>在xxxx.md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后只需要在xxxx.md中按照markdown的格式引入图片即可。</p></li></ul><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本次项目使用Hexo+Github Page搭建了个人静态博客网站，学习了Hexo的实现命令，掌握了快速搭建博客的方法，使用git进行版本控制，防止代码丢失或者错乱。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 项目总结 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 项目总结 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>题解--蚂蚁感冒</title>
       <link href="/2023/07/12/algorithm-ant-cold/"/>
       <url>/2023/07/12/algorithm-ant-cold/</url>
